@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: xpy3ocp7ai-svc-repository
+spec:
+  url: https://github.com/org4rong/xpy3ocp7ai-src

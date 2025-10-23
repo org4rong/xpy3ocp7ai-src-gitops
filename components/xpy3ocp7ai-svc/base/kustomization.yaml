@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:         
+  argocd/app-name: xpy3ocp7ai-svc
+  janus-idp.io/tekton: xpy3ocp7ai-svc
+  backstage.io/kubernetes-id: xpy3ocp7ai-svc
+  backstage.io/kubernetes-namespace: tssc-app 
+  app.kubernetes.io/part-of: xpy3ocp7ai-svc
+resources:
+  - deployment.yaml
+  - route.yaml
+  - service.yaml
